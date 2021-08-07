@@ -1,8 +1,9 @@
 local playerLoaded = false
+APPID = nil
 
 Citizen.CreateThread(function()
     Citizen.Wait(100)
-    SetDiscordAppId(854842367546753057)
+    SetDiscordAppId(APPID)
 
     SetDiscordRichPresenceAsset('logo')
                 
@@ -23,7 +24,7 @@ Citizen.CreateThread(function()
     Citizen.Wait(100)
     while true do
         if playerLoaded == true then
-            SetDiscordAppId(854842367546753057)
+            SetDiscordAppId(APPID)
 
             SetDiscordRichPresenceAsset('logo')
                 
